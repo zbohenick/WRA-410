@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,700,900');
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+}
+.page {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 200px;
+    height: 150px;
+}
+
+h1 {
+    background-color: gold;
+    text-align: center;
+    font-weight: 900;
+}
+h2 {
+    padding: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+#selected {
+    text-decoration: line-through;
+}
+.nav {
+    justify-self: center;
+    align-self: center;
+    padding: 10px 10px 10px 10px;
+    border-left: solid 3px gold;
+}
+.nav ul {
+    list-style-type: none;
+    letter-spacing: .2em;
+    line-height: 2;
+}
+.nav li {
+    cursor: pointer;
+}
+
+.content {
+    background-color: rgb(228, 228, 228);
+    height: 300px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    overflow-y: scroll;
+}
+.content p {
+    line-height: 1.5;
+}
+
+.footer {
+    height: 100px;
+    position: relative;
+    z-index: 3;
+    clip-path: polygon(0 15px, 100% 0, 100% 100%, 0 100%);
+    background-color: gold;
+    margin-top: -15px;
+    text-align: right;
+}
+.footer p {
+    padding-top: 50px;
+    padding-right: 20px;
+}
